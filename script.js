@@ -1,5 +1,6 @@
-const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSfOIAed-_b1WV4yQkaM0_hlSWh9da5BQUKABYPf-ZrqW0EYhw/viewform?usp=dialog";
-const DASHBOARD_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSfOIAed-_b1WV4yQkaM0_hlSWh9da5BQUKABYPf-ZrqW0EYhw/viewform?usp=sharing&ouid=109016722131600709192";
+const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSfOIAed-_b1WV4yQkaM0_hlSWh9da5BQUKABYPf-ZrqW0EYhw/viewform";
+
+const DASHBOARD_LINK = "https://docs.google.com/spreadsheets/d/1VOfLQfEfvKt4qTMJq3HsLVlu2UjlvmQV5F4O8EQNPhw/edit?usp=sharing";
 
 document.getElementById("submitBtn").onclick = () => {
     if (confirm("Proceed to submit LoA?")) {
