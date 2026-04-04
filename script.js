@@ -1,6 +1,6 @@
 const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSfOIAed-_b1WV4yQkaM0_hlSWh9da5BQUKABYPf-ZrqW0EYhw/viewform";
 
-const DASHBOARD_LINK = "https://docs.google.com/spreadsheets/d/1VOfLQfEfvKt4qTMJq3HsLVlu2UjlvmQV5F4O8EQNPhw/edit?usp=sharing";
+const DASHBOARD_LINK = "https://docs.google.com/spreadsheets/d/1VOfLQfEfvKt4qTMJq3HsLVlu2UjlvmQV5F4O8EQNPhw/edit?resourcekey=&gid=1025882678#gid=1025882678";
 
 document.getElementById("submitBtn").onclick = () => {
     if (confirm("Proceed to submit LoA?")) {
