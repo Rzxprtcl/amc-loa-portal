@@ -3,42 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AMC Leave of Absence Portal</title>
+<title>AMC LoA Portal</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
     <div class="card">
+
         <h1>Air Mobility Command</h1>
-        <h2>Leave of Absence Portal</h2>
+        <h2>Leave of Absence System</h2>
 
         <p class="desc">
-            Submit your official Leave of Absence request through the system below.
-            All requests are reviewed by AMC Logistics and High Command.
+            Official submission portal for Leave of Absence requests.
+            Unauthorized access or falsified entries will be sanctioned.
         </p>
 
-        <button class="btn" id="submitBtn">
-            Submit LoA Request
+        <button id="submitBtn" class="btn">Submit LoA</button>
+
+        <button id="dashboardBtn" class="btn secondary">
+            Logistics Dashboard
         </button>
 
-        <div class="status" id="statusText">
-            System Status: Operational
-        </div>
+        <div id="status" class="status">System Status: Operational</div>
 
-        <div class="notice" id="noticeBox">
-            <h3>Important Notice</h3>
+        <div class="notice" id="notice">
+            <h3>Protocol Notice</h3>
             <ul>
-                <li>False submissions are subject to disciplinary action.</li>
-                <li>Ensure all details are accurate before submission.</li>
-                <li>Processing time: 24–48 hours.</li>
-                <li>Only authorized personnel can access LoA records.</li>
+                <li>All LoA must be filed before inactivity.</li>
+                <li>Chain of command approval applies.</li>
+                <li>Records are restricted to AMC Logistics–HICOM.</li>
             </ul>
         </div>
 
-        <footer>
-            AMC Internal System • Restricted Access
-        </footer>
+        <footer>AMC Secure System</footer>
+
     </div>
 </div>
 
