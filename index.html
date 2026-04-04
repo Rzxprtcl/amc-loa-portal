@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AMC LoA Portal</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC Leave of Absence Portal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
@@ -16,27 +17,39 @@
 
         <p class="desc">
             Official submission portal for Leave of Absence requests.
-            Unauthorized access or falsified entries will be sanctioned.
+            All submissions are reviewed by AMC Logistics and High Command.
         </p>
 
-        <button id="submitBtn" class="btn">Submit LoA</button>
-
-        <button id="dashboardBtn" class="btn secondary">
-            Logistics Dashboard
+        <!-- Submit Button -->
+        <button id="submitBtn" class="btn">
+            Submit LoA Request
         </button>
 
-        <div id="status" class="status">System Status: Operational</div>
+        <!-- Dashboard Button -->
+        <button id="dashboardBtn" class="btn secondary">
+            Logistics Dashboard (Authorized Only)
+        </button>
 
+        <!-- System Status -->
+        <div class="status" id="status">
+            System Status: Operational
+        </div>
+
+        <!-- Notice Box -->
         <div class="notice" id="notice">
             <h3>Protocol Notice</h3>
             <ul>
                 <li>All LoA must be filed before inactivity.</li>
                 <li>Chain of command approval applies.</li>
                 <li>Records are restricted to AMC Logistics–HICOM.</li>
+                <li>False submissions are subject to disciplinary action.</li>
             </ul>
         </div>
 
-        <footer>AMC Secure System</footer>
+        <!-- Footer -->
+        <footer>
+            AMC Internal System • Restricted Access
+        </footer>
 
     </div>
 </div>
