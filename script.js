@@ -1,5 +1,5 @@
-const FORM_LINK = "YOUR_GOOGLE_FORM";
-const DASHBOARD_LINK = "YOUR_PRIVATE_SHEET";
+const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSfOIAed-_b1WV4yQkaM0_hlSWh9da5BQUKABYPf-ZrqW0EYhw/viewform?usp=dialog";
+const DASHBOARD_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSfOIAed-_b1WV4yQkaM0_hlSWh9da5BQUKABYPf-ZrqW0EYhw/viewform?usp=sharing&ouid=109016722131600709192";
 
 document.getElementById("submitBtn").onclick = () => {
     if (confirm("Proceed to submit LoA?")) {
