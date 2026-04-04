@@ -1,31 +1,16 @@
-const FORM_LINK = "https://forms.gle/YOUR_FORM_LINK";
+const FORM_LINK = "YOUR_GOOGLE_FORM";
+const DASHBOARD_LINK = "YOUR_PRIVATE_SHEET";
 
-document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.getElementById("submitBtn");
-    const notice = document.getElementById("noticeBox");
-    const status = document.getElementById("statusText");
+document.getElementById("submitBtn").onclick = () => {
+    if (confirm("Proceed to submit LoA?")) {
+        window.open(FORM_LINK, "_blank");
+    }
+};
 
-    btn.addEventListener("click", () => {
-        const confirmed = confirm("Proceed to Leave of Absence submission form?");
-        if (confirmed) {
-            window.open(FORM_LINK, "_blank");
-        }
-    });
+document.getElementById("dashboardBtn").onclick = () => {
+    window.open(DASHBOARD_LINK, "_blank");
+};
 
-    notice.addEventListener("click", () => {
-        notice.classList.toggle("expanded");
-    });
-
-    setInterval(() => {
-        const now = new Date();
-        const hours = now.getHours();
-
-        if (hours >= 2 && hours <= 4) {
-            status.textContent = "System Status: Maintenance Window";
-            status.style.color = "#f59e0b";
-        } else {
-            status.textContent = "System Status: Operational";
-            status.style.color = "#22c55e";
-        }
-    }, 5000);
-});
+document.getElementById("notice").onclick = () => {
+    document.getElementById("notice").classList.toggle("expanded");
+};
