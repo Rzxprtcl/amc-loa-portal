@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AMC LoA Portal</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC LoA Portal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="overlay"></div>
+
+<header class="top-bar">
+    <h1>Air Mobility Command</h1>
+    <span>Leave of Absence System</span>
+</header>
+
 <div class="container">
-    <div class="card">
 
-        <h1>Air Mobility Commaneed</h1>
-        <h2>Leave of Absence System</h2>
+    <!-- LEFT PANEL -->
+    <div class="panel">
 
-        <p class="desc">
-            Official submission portal for Leave of Absence requests.
-            Unauthorized access or falsified entries will be sanctioned.
-        </p>
+        <h2>Operations Panel</h2>
 
-        <button id="submitBtn" class="btn">Submit LoA</button>
+        <button id="submitBtn" class="btn primary">
+            Submit Leave Request
+        </button>
 
         <button id="dashboardBtn" class="btn secondary">
             Logistics Dashboard
         </button>
 
-        <div id="status" class="status">System Status: Operational</div>
+        <div class="status">
+            <span class="dot"></span>
+            System Operational
+        </div>
 
-        <div class="notice" id="notice">
-            <h3>Protocol Notice</h3>
+        <div class="notice">
+            <h3>Protocol</h3>
             <ul>
-                <li>All LoA must be filed before inactivity.</li>
-                <li>Chain of command approval applies.</li>
-                <li>Records are restricted to AMC Logistics–HICOM.</li>
+                <li>File LoA before inactivity</li>
+                <li>Chain of command applies</li>
+                <li>Restricted to AMC Logistics–HICOM</li>
+                <li>False entries = disciplinary action</li>
             </ul>
         </div>
 
-        <footer>AMC Secure System</footer>
-
     </div>
+
+</div>
+
+<!-- RIGHT SIDE LOGOS -->
+<div class="logos">
+    <img src="logo1.png">
+    <img src="logo2.png">
+    <img src="logo3.png">
+    <img src="logo4.png">
 </div>
 
 <script src="script.js"></script>
